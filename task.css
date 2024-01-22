@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    /*me permite deslizar cuando hago clic en uno de los enlaces del menu*/
+    scroll-behavior: smooth;
+}
+.container-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container-header header nav ul{
+    display: flex;
+    list-style: none;
+
+}
+.container-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+
+}
+.container-header header nav ul li a:hover{
+    color: aqua;
+}
+.nav-responsive{
+    background-color: aquamarine;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+.task1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    height:100vh;
+    gap: 20px;
+}
+.task1 .btn-runTask1{
+    padding: 10px;
+
+    border-radius: 10px;
+}
+.task1 .btn-runTask1:hover{
+    background-color: aqua;
+    transition: 1s;
+}
+.task1 .result{
+    max-width: 600px;
+    max-height: 400px;
+    border: 1px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
