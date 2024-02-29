@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="task.css">
     <script src="task.js"></script>
-    
+    <script src="task2.js"></script>
+    <script src="task3.js"></script>
+    <script src="task4.js"></script>
+    <script src="task5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -16,8 +20,8 @@
         <header>
             <nav id="nav">
                 <ul>
-                    <li><a href="#task1">TASK#1</a></li>
-                    <li><a href="#task2">TASK#2</a></li>
+                    <li><a href="#task1">Ejercicio 1 : Condicionales</a></li>
+                    <li><a href="#taks2">TASK#2</a></li>
                     <li><a href="#task3">TASK#3</a></li>
                     <li><a href="#task4">TASK#4</a></li>
                     <li><a href="#task5">TASK#5</a></li>
@@ -28,28 +32,120 @@
             </div>
         </header>
     </div>
-    <section id="task1" class="task1">
-        <header>
-            <h1>Tarea Numero#1</h1>
-           
-        </header>
-        <ul>
-            <li>Crea un programa que te haga una serie de preguntas.</li>
-            <li>Al Finalizar el programa debera mostrarte que prenda deberas ponerte.</li>
-            <li>Almenos se debera hacer 5 pregutas.</li>
-            
-        </ul>
-        <button class="btn-runTask1" onclick="runTask1()">Ejecutar</button>
-        <div class="result">
-            <div class="my-texto">
-
+    <section class="main">
+        <section id="task1" class="task1">
+            <div class="container-task">
+                <header>
+                    <h1>Tarea Numero#1</h1>
+                   
+                </header>
+                <ul>
+                    <li>1. Solicitar al usuario que responda a la pregunta (“¿Eres bellisimo/a?”), en caso de contestar sí, responder “Ciertamente”, en caso de contestar no, responder: “No te creo”.<p><button onclick="ejer1()">ejecutar</button></p></li>
+                    <li>2. Solicitar al usuario un número, y determinar si es divisible entre dos o no. Mostrando al usuario un mensaje de “x número es divisible entre 2” o “x núm no es divisible entre 2”.<p><button onclick="ejer2()">ejecutar</button></p></li>
+                    <li>3. Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en un Alert.</li>
+                    <li>4. Solicitar al usuario un número de cliente. Si el número es el 1000, imprimir 'Ganaste un premio', en caso contrario mostrar el número y el mensaje “Lo sentimos, sigue participando”.<p><button onclick="ejer4()">ejecutar</button></p></li>
+                    <li>5. Solicitar al usuario que ingrese dos números y mostrar cuál de los dos es menor. No considerar el caso en que ambos números son iguales.<p><button onclick="ejer5()">ejecutar</button></p></li>
+                    <li>6. Solicitar al usuario que ingrese tres números y mostrar cuál de los tres es el número mayor. Considerar el caso en que 2 números sean iguales.<p><button onclick="ejer6()">ejecutar</button></p></li>
+                    <li>7. Requerir al usuario que ingrese un día de la semana e imprimir un mensaje si es lunes, otro mensaje diferente si es viernes, otro mensaje diferente si es sábado o domingo. Si el día ingresado no es ninguno de esos, imprimir otro mensaje.<p><button onclick="ejer7()">ejecutar</button></p></li>
+                    <li>8. Solicitar al usuario una calificación (entre 1 y 10). Luego se debe comprobar que el número efectivamente esté en ese rango, si no lo está imprima un mensaje de error. Si lo está, imprima “reprobado” si la calificación es inferior a 6, “regular” si está entre 6 y 8, “bien” si es 9, y por último, “excelente” si es 10.<p><button onclick="ejer8()">ejecutar</button></p></li>
+                    <li>9. Escribe un programa que responda a un usuario que quiere comprar un helado en una conocida marca de comida rápida cuánto le costará en función del topping que elija.
+                        El helado sin topping cuesta 50 MXN.
+                        El topping de oreo cuesta 10 MXN.
+                        El topping de KitKat cuesta 15 MXN.
+                        El topping de brownie cuesta 20 MXN.
+                        En caso de no disponer del topping solicitado por el usuario, el programa le indicará “no tenemos este topping, lo sentimos.” y a continuación le informará el precio del helado sin ningún topping.<p><button onclick="ejer9()">ejecutar</button></p></li>
+                    <li>10. Un conocido portal de educación en tecnología está ofreciendo programas para aprender a desarrollar aplicaciones. Escribe un programa que le indique a la persona interesada cuánto deberá pagar mensualmente de acuerdo a la opción elegida.
+                        El programa educativo contempla 3 diferentes niveles, cada uno con su costo mensual: Course: $4999 MXN
+                        <ul>
+                            <li>Carrera $3999 MXN</li>
+                            <li> Master: $2999 MXN</li>
+                        </ul>
+                       
+                        Adicionalmente preguntar si cuenta con alguna beca y aplicar el descuento correspondiente al precio final.
+                        <ul>
+                            <li> Beca Facebook: 20% de descuento.</li>
+                            <li>Beca Google: 15% de descuento.</li>
+                            <li>Beca Jesua: 50% de descuento.</li>
+                        </ul>
+                        Finalmente, además del precio mensual con descuento, indicar al usuario cuánto gastaría en total por el curso elegido, tomando en cuenta las siguientes duraciones:
+                        <ul>
+                            <li>  Course: 2 meses</li>
+                            <li>  Carrera 6 meses</li>
+                            <li> Master: 12 meses</li>
+                        </ul>
+                      
+                        <p><button onclick="ejer10()">ejecutar</button></p>
+                       </li>
+                    <li>11. Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
+                        Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto” ha de ser 0.10 y si es “autobús” 0.5.
+                        Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al total. Considere qué:
+                        total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos.<p><button onclick="ejer11()">ejecutar</button></p></li>
+                </ul>
             </div>
-            <div class="result-img">
-
+          
+        </section>
+        <section class="task2" id="taks2">
+            <div class="container-task2">
+                <ul>
+                    <li>1. Crear un array vacío, luego generar 10 números al azar y guardarlos en un array. Mostrar en consola el resultado del array.<p><button onclick="ejer2_1()">ejecutar</button></p></li>
+                    <li>2. El usuario deberá ingresar un string con varias palabras separadas por coma en un popup y se deben convertir en un array, (el usuario ingresa: '1,2,3,4,5' y se convierte en [1,2,3,4,5]). Mostrar en consola dicho resultado.<p><button onclick="ejer2_2()">ejecutar</button></p></li>
+                    <li>3. De acuerdo al array [10,40,30,20,15,5], imprime lo siguiente: El arreglo ordenado de menor a mayor, muestra el número menor y el número mayor. Tip: Busca en google los métodos de JavaScript que regresan el mayor y menor elemento de un arreglo.<p><button onclick="ejer2_3()">ejecutar</button></p></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+        
             </div>
-            
-        </div>
+    
+        </section>
+        <section class="task3" id="task3">
+            <div class="container-task3">
+                <ul>
+                    <li>1. Crea un programa que pregunte al usuario un número. Mostrar los números que son múltiplos de 5 desde 1 hasta el número introducido por el usuario.<p><button onclick="ejer3_1()">ejecutar</button></p></li>
+                    <li>2. Crea un programa que solicite al usuario 2 números entre 1 y 50. Posteriormente mostrar en consola los números del 1 hasta el 50, pero añadir el mensaje “¡Lotería!” solo al mostrar los números indicados por el usuario..<p><button onclick="ejer3_2()">ejecutar</button></p></li>
+                    <li>3. Crea un programa que solicite al usuario números, si lo que este introduce es un número guardarlo en un arreglo. Para terminar el capturar el usuario debe ingresar el número 0. Finalmente mostrar la lista de números capturados en pantalla o en la consola..<p><button onclick="ejer3_3()">ejecutar</button></p></li>
+                    <li>4. Crea un programa que solicite al usuario letras o palabras, si es así guardar el resultado. Para terminar de capturar el usuario no debe escribir valor alguno. Al terminar de capturar, mostrar en pantalla la concatenación de todas las palabras capturadas.<p><button onclick="ejer3_4()">ejecutar</button></p></li>
+                    <li>5. Crea un programa que solicite al usuario un día de la semana (ej: lunes, jueves, domingo, etc). El programa mostrará un mensaje personalizado para cada día de la semana por medio de un alert. Y seguirá pidiendo al usuario introducir otro día. En caso de que el día introducido sea domingo mostrar al usuario el mensaje “Ve a descansar” y terminar la captura de información.<p><button onclick="ejer3_5()">ejecutar</button></p></li>
+                    <li></li>
+                </ul>
+        
+            </div>
+    
+        </section>
+
+        <section class="task4" id="task4">
+            <div class="container-task4">
+                <ul>
+                    <li>1. Crea un programa que imprima en consola los números impares del 1 al 50..<p><button onclick="ejer4_1()">ejecutar</button></p></li>
+                    <li>2. Crea un programa que pregunte al usuario un número. Usando el archivo de arreglo de Pokémons, mostrar solo los nombres de los Pokémons cuyos números que son múltiplos de 5 desde 1 hasta el número introducido por el usuario. https://pastebin.com/Zzk8g7Z6.<p><button onclick="ejer4_2()">ejecutar</button></p></li>
+                    <li>3. Crea un programa que recorra el arreglo [4,”dos”,8,”tres”,5,9,1,”cero”] y muestre en consola solo los elementos que son tipo número..<p><button onclick="ejer4_3()">ejecutar</button></p></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="task5" id="task5">
+            <div class="container-task5">
+                <ul>
+                    <li>Deberas realizar un semáforo utilizando JS.
+                        El semáforo deberá cambiar de luz de Verde a Amarilla y de Amarilla a Roja y luego de nuevo a Verde.
+                        Puedes mostrar la imagen del semáforo cambiando, hacer el cambio con console.log o con alert.
+                        Se debe respetar el orden de los colores:
+                        De rojo pasa a Verde.
+                        De amarillo puede pasar a Rojo.
+                        De Verde pasa a Amarillo.<p><button onclick="ejer5_1()">ejecutar</button></p></li>
+                </ul>
+                <div class="semaforo" id="semaforo">
+                    <div class="luz rojo"></div>
+                    <div class="luz amarillo"></div>
+                    <div class="luz verde"></div>
+                  </div>
+                    
+            </div>
+        </section>
+      
     </section>
+    
+    
 
 
 
