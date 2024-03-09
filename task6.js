@@ -148,5 +148,15 @@ function sumaValores2(){
         let totalYerko = document.querySelector(".totalCristiano").innerHTML=total2;
 }
 function consultar(){
-    
+    let val1 = document.querySelectorAll(".valor1");
+    let val2 = document.querySelectorAll(".valor2");
+    let totalc = document.querySelector(".totalCristiano");
+    let totaly = document.querySelector(".totalYerko");
+    console.log(totaly);
+    Swal.fire({
+        title: "The Internet?",
+        text: `el Usuario Yerko Barriga vendio: ${totaly.textContent}. Articulos ${val1.length} /n Y el usuario Cristiano Ronaldo ${totalc.textContent}. Articulos ${val2.length}  `,
+        icon: "inf"
+      });
+
 }
