@@ -29,7 +29,7 @@ function ejer5_1() {
         // Después de un cierto tiempo, apagar la luz
         setTimeout(function() {
           luces2[index].style.background = '#ccc';
-          
+          console.log("amarillo");
         }, tiempo);
       }
 
